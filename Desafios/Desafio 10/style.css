@@ -1,0 +1,75 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face{
+    font-family: 'Android'; src: url(Imagens/fontes/idroid.otf) format('opentype') ;
+}
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'Bebas Neue', cursive;
+    --fonte2: 'Android', sans-serif;
+}
+*{
+    margin: 0px; padding: 0px;
+}
+body{
+    line-height: 2em; background-color: rgb(255, 244, 230);
+}
+img{
+    width: 100%;
+}
+.img-pequena{
+    max-width: 350px;
+}
+main{
+    background-color: white; padding: 20px; border-radius: 10px; 
+    min-width: 280px; max-width: 800px; margin: auto;
+}
+header{
+    background-image: -moz-linear-gradient(#3ddc84, #063d1e); padding: 30px;
+}
+#Título-principal{
+    font-family: var(--fonte1); text-align: center; color: white; text-shadow: 2px 2px 0px black;
+}
+.Parágrafo-do-título{
+    font-family: var(--fonte0); text-align: center; color: white; text-shadow: 2px 2px 0px black;
+}
+a{
+    font-family: var(--fonte0); text-align: left; color: white; text-shadow: 1px 1px 2px black; padding: 10px; border-radius: 5px; font-weight: bold; transition-duration: .5s; text-decoration: none;
+}
+nav > a:hover{
+    background-color: var(--cor3); color: var(--cor5);
+}
+.Título-do-artigo{
+    font-family: var(--fonte2); text-align: left; color: var(--cor4);
+}
+.Parágrafo{
+    font-family: var(--fonte0); text-align: left; color: black;
+}
+.Subtópico{
+    font-family: var(--fonte2); text-align: left; color: var(--cor4); background-color: var(--cor0);
+}
+div.video{
+    position: relative; background-color: var(--cor4); height: 0px; margin-left: -20px; margin-right: -20px; margin-bottom: 15px; padding-bottom: 59%;
+}
+div.video > iframe{
+    position: absolute; top: 5%; left: 5%; width: 90%; height: 90%;
+}
+.Lista{
+    font-family: var(--fonte0); text-align: left;color: white;
+    background-color: var(--cor2); padding: 10px; border-radius: 10px 10px 0px 0px;
+}
+ul{
+    font-family: var(--fonte0); list-style-type: '\2714\0020\0020'; columns: 2; list-style-position: inside; color: black;
+}
+footer{
+    font-family: var(--fonte0); background-color: var(--cor4); color: white; text-align: center;
+}
+aside{
+    font-family: var(--fonte0); background-color: var(--cor1); border-radius: 10px;
+}

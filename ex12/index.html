@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+    <style>
+        div > p {
+            display: none;
+        }
+        div:hover > p {
+            display: block;
+            background-color: yellow;
+        }
+        #Título{
+            color: white;background-color: black;
+        }
+        .parágrafo{
+            color: midnightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="Título">Ids e classes</h1>
+    <p class="parágrafo">O id serve para idêntificar um elemento específico e só pode ser usado 1 vez, já a classe indica a qual grupo tal pertence e pode ser usado várias vezes</p>
+    <p class="parágrafo">Para aplicar isso é só ir no style e colocar "#o seu id" e ".o seu class" ao invez do body, h1 etc</p>
+    <h2>Pseudo-classes e elementos</h2>
+    <h3>Pseudo-classes</h3>
+    <p>:hover, :visited, :active, :checked, :empty e :focus</p>
+    <h3>Pseudo-elementos</h3>
+    <p>:before, :after, :first-letter, :first-line</p>
+    <h3>Mais um exemplo</h3>
+    <p>Da para criar um texto oculto usando a tag div no html 5 e no style </p>
+    <div>
+        Passe o mouse aqui
+        <p>Olha o parágrafo secreto</p>
+    </div>
+</body>
+</html>

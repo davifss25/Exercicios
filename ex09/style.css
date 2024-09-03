@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/* Use essa tag para previnir que o seu site fique sem acentuações, e como você pode ver se você usar o /* da para escrever um comentario oculto e * + / para fechar-lo */
+body{
+    background-color: black;
+    color: aliceblue;
+    font-size: medium;
+    font-family: fantasy;
+}
+h1{
+    color: cadetblue;
+}
+a{
+    color: yellow;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio e vídeo</title>
+</head>
+<body>
+    <h1>Áudio</h1>
+    <p>Para inserir um audio é só pôr a tag <strong>audio</strong></p>
+    <p>Porém você pode pôr alguns parâmetros dentro da tag audio ao usar a tag <strong>preload</strong>
+    <ul>
+        <li><strong>metadata</strong> Vai carregar apenas as informações do arquivo (temp,tam e etc)</li>
+        <li><strong>none</strong> Não vai carregar nada até que o usuário decida apertar no botão de play</li>
+        <li><strong>auto</strong> Vai carregar o arquivo assim que a página for carregada</li>
+        <p><mark> A partir daqui essas tags não são usadas dentro do preload e sim ao lado </mark></p>
+        <li><strong>controls</strong> Vai fazer aparecer controles na tela</li>
+        <li><strong>autoplay</strong> Vai fazer com que o vídeo começe a tocar automaticamente</li>
+        <li><strong>loop</strong> Vai fazer o vídeo ficar repetindo após ele terminar</li>
+    </ul></p>
+    <br>
+    <p>Abaixo da tag audio você pode usar a tag <strong>source:src</strong> para que se caso o arquivo não carrege você ponha outros arquivos ou um link de download</p>
+
+    <audio preload="metadata" controls autoplay>
+        <source src="Audio/guanacast.mp3" type="audio/mpeg">
+        <source src="Audio/guanacast.ogg" type="audio/ogg">
+        <source src="Audio/guanacast.wav" type="image/wav">
+        <p>Se seu navegador não conseguiu carregar o audio é só baixar-lo <a href="Audio/guanacast.mp3" download="guanacast.mp3" type="audio/mpeg"></a></p>
+    </audio>
+
+    <h1>Vídeo</h1>
+    <p>O vídeo é bem parecido com o áudio é só pôr a tag vídeo, e nela também poderemos pôr parâmetros</p>
+    <ul>
+        <li><strong>width</strong> Vai indicar a largura do vídeo</li>
+        <li><strong>poster</strong> Configura a miniatura do vídeo</li>
+        <li><strong>controls</strong> Indica se vão aparecer controles no player</li>
+        <li><strong>autoplay</strong> Faz o vídeo dar play automaticamente</li>
+    </ul>
+    <p>Que nem no audio você pode adicionar outros tipos de arquivos de vídeo caso o primeiro não carregue, é só usar a tag <strong>source:src</strong></p>
+
+    <video width="600" poster="thumb.jpg" controls autoplay>
+        <source src="Vídeos/vídeo.mp4" type="video/mp4">
+        <source src="Vídeos/vídeo.webm" type="video/webm">
+        <source src="Vídeos/vídeo.ogv" type="video/ogg">
+    </video>
+
+    <h2>Tabela de aquivos compatíveis</h2>
+    <dl>
+        <dt><strong>Firefox e Opera</strong></dt>
+        <dd>.webm .ogv</dd>
+        <dt><strong>Safari e Edge</strong></dt>
+        <dd>.mp4 .m4v</dd>
+        <dt><strong>Chrome</strong></dt>
+        <dd>Todos os anteriores</dd>
+    </dl>
+
+    <h2>Hospedar pode ser caro</h2>
+    <p>Ao hospedar um vídeo no seu site, cada pessoa que acessa-lo vai consumir tráfego, mesmo que o vídeo seja leve, então você pode usar vídeos externos como:</p>
+    <ul>
+        <li><strong>Youtube</strong> É gratuito e rápido, porém para usar-lo você tem que deixar o seu vídeo público o que é devantajozo se você quiser pôr um vídeo exclusivo para assinantes</li>
+        <li><strong>Vimeo</strong> É pago, não tão rápido quanto o Youtube, porém você tem total controle de quem pode acessar o vídeo</li>
+    </ul>
+
+    <p>Para adicionar esses vídeos ao seu site é só escolher a opção incorporar, copiar o código que será dado e pronto!</p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wPT3jFvVy7o?si=0HTxNW1uw3VgtoNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

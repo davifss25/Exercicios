@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens flexíveis</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Para pôr imagens dinâmicas primeiro ponha a tag <strong>picture</strong>, dentro dela ponha <strong>source:media:type</strong> no media ponha o tamanho máximo da <strong>imagem g + 50px</strong>, ponha o <strong>srcset para imagem m</strong> e o tipo de <strong>arquivo no type</strong></p>
+    <p>Depois é só por a tag img e escolher a imagem g</p>
+    <p><mark>Agora se você quer por uma imagem dinâmica pequena fassa isso <strong>acima do sourcemediatype</strong> da imagem m e ponha o <strong>max width para o tamanho máximo da imagem m + 50px</strong> e o <strong>srcset para imagem p</strong></mark></p>
+    <picture><!--Para que a imagem dinâmica funcione, ponha o source:media:type da "imagem p" acima da "imagem m"-->
+        <source media="(max-width: 750px)" srcset="foto-p" type="image/png">
+        <source media="(max-width: 1050px)" srcset="foto-m" type="image/png">
+        <img src="foto-g" alt="">
+    </picture>
+</body>
+</html>
